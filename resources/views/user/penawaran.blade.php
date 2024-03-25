@@ -1,6 +1,6 @@
 <div class="font-bold text-2xl flex py-5 justify-center">Pilih Pembayaran sesuai kebutuhan anda</div>
 
-<div class="flex justify-center gap-5">
+<div class="flex flex-wrap justify-center  gap-5 ">
     {{-- paket 1 bulan --}}
     <div
         class=" max-w-sm py-9 px-16 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
