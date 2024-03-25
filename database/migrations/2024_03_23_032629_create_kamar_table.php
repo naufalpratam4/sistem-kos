@@ -11,18 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::disableForeignKeyConstraints();
-
         Schema::create('kamar', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('nomor_kamar');
-            $table->bigInteger('luas_kamar');
+            $table->string('nomor_kamar');
+            $table->string('luas_kamar');
             $table->bigInteger('harga_sewa');
             $table->text('fasilitas');
             $table->enum('status', ['kosong', 'isi'])->default('kosong');
         });
-
-        Schema::enableForeignKeyConstraints();
     }
 
     /**

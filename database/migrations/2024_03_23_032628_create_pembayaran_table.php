@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('pembayaran', function (Blueprint $table) {
             $table->id();
             $table->string('metode_pembayaran');
-            $table->foreign('metode_pembayaran')->references('pembayaran')->on('penghuni');
             $table->date('tanggal_pembayaran');
             $table->bigInteger('jumlah_pembayaran');
         });
